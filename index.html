@@ -233,7 +233,7 @@
 
 
         <!-- Información General -->
-        <section class="bg-black p-0 section-wrapper">
+        <section class="bg-black p-0 section-wrapper general-information ">
             <div class="skewed"></div>
             
             <div class="container">
@@ -452,12 +452,12 @@
         
         <div class="container">
             <div class="row text-center pt-5">
-                <div class="col-6" data-aos="fade-right">
+                <div class="col-6">
                     <a href="https://www.facebook.com/Santiago21k/" class="text-light rrss-link" target="_blank">
                         <i class="bi bi-facebook text-light"></i> Facebook
                     </a>
                 </div>
-                <div class="col-6" data-aos="fade-left">
+                <div class="col-6">
                     <a href="https://www.instagram.com/sporthubchile/" class="text-light rrss-link" target="_blank">
                         <i class="bi bi-instagram"></i> Instagram
                     </a>
@@ -518,6 +518,17 @@
             easing: 'ease-out-back',
             duration: 1000
         });
+    </script>
+
+    <script>
+window.addEventListener("shown.bs.modal", function () {
+    AOS.init({ disable: true });
+});
+
+window.addEventListener("hidden.bs.modal", function () {
+    AOS.init({ disable: false });
+});
+
     </script>
 </script>
 
