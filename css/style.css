@@ -1,0 +1,667 @@
+/* Variable Root */
+/* ------------- */
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    --color-white: #fff;
+    --color-black: #1D1D1B;
+    --color-black--secondary: #212529;
+
+    --color--blue: #2F84C1;
+    --color--purple: #96519B;
+    --color--pink: #E04773;
+    --color--yellow: #F7CB34;
+}
+
+/* Main Styles */
+/* ------------- */
+body {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 1.175rem;
+    color: var(--color-black--secondary);
+    box-sizing: border-box;
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.font--oswald {
+    font-family: var(--font-roboto);
+}
+
+
+.title {
+    font-family: var(--font-roboto);
+    font-size: 1.8rem;
+    color: var(--color--blue);
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.title--secondary {
+    font-family: var(--font-roboto);
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: var(--color--purple);
+    font-weight: 700;
+}
+
+
+/* Colors Styles */
+/* ---------------- */
+.color--purple {
+    color: var(--color--purple)!important;
+}
+
+.color--blue{
+    color: var(--color--blue);
+}
+
+.color--yellow{
+    color: var(--color--yellow);
+}
+
+/* Background Styles */
+/* ---------------- */
+.bg--color-blue {
+    background-color: var(--color--blue);
+}
+
+.bg-black {
+    background-color: var(--color-black)!important;
+}
+
+.bg--gray {
+    background-color: #F5F5F5;
+}
+
+.bg-yellow {
+    background-color: var(--color--yellow);
+}
+
+
+/*
+/* Nav Styles */
+/* ---------- */
+.navbar{
+    transition:500ms ease;
+    background:transparent;
+  }
+
+.navbar-scrolled {
+    background:#000;
+}
+
+.nav-item {
+    padding: 0.6em 2em;
+}
+
+
+.nav-item .nav-link {
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.nav-item:hover .nav-link {
+    border-bottom: 2px solid var(--color--yellow);
+}
+
+.nav-item .nav-link.active {
+    color: #fff;
+    border-bottom: 2px solid var(--color--yellow);
+}
+
+.navbar-toggler {
+    border-color: var(--color-white);
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:hover {
+    color: var(--color--yellow);
+}
+
+.navbar-toggler:focus {
+    border-color: transparent;
+}
+
+.navbar-nav {
+    background-color: var(--color-black);
+}
+
+/*
+/* Header Styles */
+/* ------------- */
+
+.hero {
+    height: 60vh;
+    background-image: url('/img/hero/bg-hero-desktop.jpg');
+}
+
+.logo--main {
+    width: 100%;
+    max-width: 700px;
+}
+
+.slogan {
+    background-image: url(/img/hero/slogan-mobile.jpg);
+    height: 40px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-color: #F7CB33;
+}
+
+.date {
+    background-image: url(/img/hero/bg-hero-2-mobile.jpg);
+    background-position: 30%;
+    background-size: cover;
+}
+
+.date__title {
+    color: var(--color-white);    
+    /* font-size: 5rem; */
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 0!important;
+}
+
+.date__day,
+.date__place,
+.date__hour {
+    text-align: right;
+    color: var(--color-white);    
+    font-weight: bold;
+    margin: 0;
+}
+
+.date__day {
+    /* font-size: 2.5rem; */
+    font-size: 2rem;
+}
+
+.date__place {
+    /* font-size: 2.3rem; */
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+
+.date__hour {
+    font-size: 1.8rem;
+    margin-top: -1rem;
+}
+
+.btn--inscription {
+    border: 2px solid var(--color-black);
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px 50px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    -webkit-box-shadow: 11px 11px 5px -7px rgba(255,255,255,0.38);
+    -moz-box-shadow: 11px 11px 5px -7px rgba(255,255,255,0.38);
+    box-shadow: 11px 11px 5px -7px rgba(255,255,255,0.38);
+
+    transition: color;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+    
+}
+
+.btn--inscription:hover {
+    color: var(--color--yellow);
+}
+
+
+/*
+/* Information Styles */
+/* ------------------ */
+.border__custom-1 {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
+-moz-box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
+box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
+}
+
+.information__box{
+    color: var(--color-white);
+    font-size: 2rem;
+
+}
+
+.information__box .bi {
+    font-size: 3rem;
+    color: var(--color--blue);
+}
+
+.information__box .date--title {
+    font-size: 1.5rem;
+    color: var(--color--blue);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.information__box .date--text {
+    font-size: 1.5rem;
+    color: var(--color--white);
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-main {
+    border: 2px solid var(--color-black);
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 700;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    width: 100%;
+
+    transition: background;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+}
+
+.btn-main:hover {
+    background-color: var(--color--yellow);
+    color: var(--color-black);
+    border-color: var(--color--yellow);
+}
+
+.btn-reglamento {
+    color: var(--color--purple);
+    font-weight: 700;
+    padding-bottom: 5px;
+    border: 2px dotted var(--color--purple);
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin-right: 2rem;
+    width: 100%;
+    transition: background;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+}
+
+.btn-reglamento:hover {
+    color: var(--color-white);
+    border: 2px dotted var(--color--purple);
+    background-color: var(--color--purple);
+}
+
+
+
+/*
+/* Circuits Styles */
+/* --------------- */
+.bg__circuit {
+    background-color: var(--color--purple);
+}
+
+.bg__circuit--2{
+    /* background-color: rgba(236, 79, 87, 0.8); */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-circuit {
+    color: var(--color-white);
+    font-size: 8rem;
+    border-radius: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-style: italic;
+    background-color: var(--color-black);
+    border-bottom: 4px solid var(--color--yellow);
+
+    transition: background;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+    
+}
+
+.btn-circuit:hover {
+    background-color: var(--color--yellow);
+    color: var(--color-white);
+}
+
+.btn-circuit--time{
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+}
+
+.btn-circuit--show {
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.k-style{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.btn-download-circuits {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 1px dotted transparent;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.btn-download-circuits:hover {
+    border-color: var(--color--yellow);
+    color: var(--color--yellow);
+}
+
+.modal-content {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.modal-header {
+    border-bottom-color: transparent ;
+}
+
+.modal-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.modal-footer {
+    border-top-color: transparent ;
+}
+
+.btn-close-modal {
+    color: var(--color-white);
+}
+
+.btn-close-modal:hover {
+    border-color: var(--color-white);
+}
+
+.btn-x {
+    color: var(--color-white)!important;
+}
+
+.btn-x:hover {
+    color: var(--color--yellow);
+}
+
+.btn-close {
+    color: var(--color-white)!important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/*
+/* Inscription Styles */
+/* ------------------ */
+
+#wlc-table-tickets {
+    border-color: transparent!important;
+}
+
+#wlc-table-tickets thead:first-child {
+    background-color: var(--color--purple);
+}
+
+.welcu_embed {
+    min-height: 300px;
+}
+
+.welcu_embed #wlc-table-tickets tbody td:first-child {
+    color: var(--color-white)!important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.kit-list {
+    list-style: none;
+}
+
+.kit-icon {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.kit-title {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kit-info {
+    color: var(--color-white);
+}
+
+
+/*
+/* Decoratot Styles */
+/* ------------------ */
+
+.section-wrapper,
+.section-wrapper-2,
+.section-wrapper-3,
+.section-wrapper-4,
+.section-wrapper-5 {
+    position: relative;
+}
+
+.skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--color-black);
+    z-index: 0;
+    transform: skewY(1deg);
+    transform-origin: top right;
+  }
+
+  .skewed-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--color-white);
+    z-index: 0;
+    transform: skewY(1deg);
+    transform-origin: top right;
+  }
+
+  .skewed-3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--color-black);
+    z-index: 0;
+    transform: skewY(-1deg);
+    transform-origin: top left;
+  }
+
+  .skewed-4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #F5F5F5;
+    z-index: 0;
+    transform: skewY(-1deg);
+    transform-origin: top left;
+  }
+
+  .skewed-5 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--color--yellow);
+    z-index: 0;
+    transform: skewY(1deg);
+    transform-origin: top right;
+  }
+
+/*
+/* Footer Styles */
+/* --------------- */
+footer {
+    border-top: 10px solid var(--color--yellow);
+    background-image: url('/img/hero/fondo-2-recorte.jpg');
+}
+
+.rrss-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+
+    transition: border;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+    
+}
+
+.rrss-link:hover {
+    border-bottom: 2px solid var(--color--yellow);
+}
+
+/*
+/* Media Query Styles */
+/* --------------- */
+@media (min-width: 992px) { 
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .navbar-nav {
+        background-color: transparent;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        padding: 5px 10px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .date__title {
+        font-size: 4rem;
+    }
+
+    .slogan {
+        background-image: url(/img/hero/slogan-desktop.jpg);
+        height: 50px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-color: #F7CB33;
+    }
+
+    .nav-logo {
+        height: 40px;
+        width: auto!important;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    
+}
+
+@media (min-width: 1400px) { 
+
+    .nav-link {
+        font-size: 1.125rem;
+    }
+
+
+    .nav-logo {
+        height: 40px;
+        width: auto!important;
+    }
+
+    .date__title {
+        font-size: 4.5rem;
+    }
+
+    .slogan {
+        background-image: url(/img/hero/slogan-desktop.jpg);
+        height: 70px;
+        width: 100%;
+    }
+
+    .date__day {
+        font-size: 2.5rem;
+    }
+    
+    .date__place {
+        font-size: 2.3rem;
+        margin-top: -1rem;
+    }
+    
+    .date__hour {
+        font-size: 2rem;
+        margin-top: -1rem;
+    }
+}
+
+@media (min-width: 1900px) { 
+    .hero {
+        height: 75vh;
+    }
+}
