@@ -157,6 +157,13 @@ section {
     max-width: 700px;
 }
 
+@media only screen and (max-width: 1540px) and (min-width: 1360px) {
+    .logo--main {
+        margin-top: 80px;
+        width: 470px;
+    }
+}
+
 .slogan {
     background-image: url(/img/hero/slogan-mobile.jpg);
     height: 40px;
