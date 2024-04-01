@@ -10,7 +10,9 @@
     --color-black--secondary: #212529;
 
     --color--blue: #2F84C1;
-    --color--purple: #96519B;
+    --color--purple: #215D77;
+    /* --color--blue: #2F84C1; */
+    /* --color--purple: #96519B; */
     --color--pink: #E04773;
     --color--yellow: #F7CB34;
 }
@@ -147,7 +149,8 @@ section {
 
 .hero {
     height: 60vh;
-    background-image: url('/img/hero/bg-hero-desktop.jpg');
+    background-image: url('/img/hero/bg-hero-desktop--ago.png');
+    /* background-image: url('/img/hero/bg-hero-desktop.jpg'); */
     background-position: start;
     background-size: cover;
 }
@@ -174,7 +177,8 @@ section {
 }
 
 .date {
-    background-image: url(/img/hero/bg-hero-2-mobile.jpg);
+    background-image: url(/img/hero/banner-recorte-agosto.png);
+    /* background-image: url(/img/hero/bg-hero-2-mobile.jpg); */
     background-position: 30%;
     background-size: cover;
 }
@@ -557,7 +561,8 @@ box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
 /* --------------- */
 footer {
     border-top: 10px solid var(--color--yellow);
-    background-image: url('/img/hero/fondo-2-recorte.jpg');
+    background-image: url('/img/hero/banner-recorte-agosto.png');
+    /* background-image: url('/img/hero/fondo-2-recorte.jpg'); */
 }
 
 .rrss-link {
