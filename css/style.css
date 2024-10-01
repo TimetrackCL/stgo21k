@@ -6,17 +6,16 @@
     --font-montserrat: 'Montserrat', sans-serif;
 
     --color-white: #fff;
-    --color-black: #1D1D1B;
-    --color-black--secondary: #212529;
+    --color-black: #051823;
+    --color-black--secondary: #051823;
 
-    --color--blue: #2F84C1;
-    --color--purple: #215D77;
+    --color--blue: #26648a;
+    --color--purple: #0E2F44;
     /* --color--blue: #2F84C1; */
     /* --color--purple: #96519B; */
-    --color--pink: #E04773;
-    --color--yellow: #F7CB34;
+    --color--pink: #B30101;
+    --color--yellow: #FFA500;
 }
-
 /* Main Styles */
 /* ------------- */
 body {
@@ -74,7 +73,8 @@ section {
 /* Background Styles */
 /* ---------------- */
 .bg--color-blue {
-    background-color: var(--color--blue);
+    /* background-color: var(--color--blue); */
+    background-color: var(--color--purple);
 }
 
 .bg-black {
@@ -96,10 +96,19 @@ section {
 .navbar{
     transition:500ms ease;
     background:transparent;
-  }
+    background: linear-gradient(180deg, rgba(5,24,35,1) 0%, rgba(5,24,35,0.5466561624649859) 52%, rgba(5,24,35,0) 97%);        
+}
+/* 
+@media (min-width: 768px) {
+    .navbar {
+        background: linear-gradient(180deg, rgba(5,24,35,1) 0%, rgba(5,24,35,0.5466561624649859) 52%, rgba(5,24,35,0) 97%);        
+    }
+
+} */
 
 .navbar-scrolled {
-    background:#000;
+    background:#051823;
+    /* background:#000; */
 }
 
 .nav-item {
@@ -149,8 +158,7 @@ section {
 
 .hero {
     height: 60vh;
-    background-image: url('/img/hero/bg-hero-desktop--ago.png');
-    /* background-image: url('/img/hero/bg-hero-desktop.jpg'); */
+    background-image: url('/img/hero/2025-v1/bg-hero-desktop-2025v1.jpg');
     background-position: start;
     background-size: cover;
 }
@@ -168,7 +176,7 @@ section {
 }
 
 .slogan {
-    background-image: url(/img/hero/slogan-mobile.jpg);
+    background-image: url(/img/hero/slogan-mobile.jpg); /* pendiente */
     height: 40px;
     width: 100%;
     background-position: center;
@@ -177,7 +185,7 @@ section {
 }
 
 .date {
-    background-image: url(/img/hero/banner-recorte-agosto.png);
+    background-image: url(/img/hero/2025-v1/banner-recorte-2025v1.jpg);
     /* background-image: url(/img/hero/bg-hero-2-mobile.jpg); */
     background-position: 30%;
     background-size: cover;
@@ -298,7 +306,7 @@ box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
 }
 
 .btn-reglamento {
-    color: var(--color--purple);
+    color: var(--color--blue);
     font-weight: 700;
     padding-bottom: 5px;
     border: 2px dotted var(--color--purple);
@@ -561,7 +569,8 @@ box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
 /* --------------- */
 footer {
     border-top: 10px solid var(--color--yellow);
-    background-image: url('/img/hero/banner-recorte-agosto.png');
+    background-image: url('/img/hero/2025-v1/banner-recorte-2025v1.jpg');
+    /* background-image: url('/img/hero/banner-recorte-agosto.png'); */
     /* background-image: url('/img/hero/fondo-2-recorte.jpg'); */
 }
 
@@ -619,7 +628,12 @@ footer {
     }
 
     .slogan {
-        background-image: url(/img/hero/slogan-desktop.jpg);
+        background-image: url(/img/hero/2025-v1/slogan-desktop-2025v1.jpg) linear-gradient(180deg, rgba(5,24,35,1) 13%, rgba(5,24,35,0.6026785714285714) 37%, rgba(5,24,35,0) 82%);;
+
+        /* background-image: linear-gradient(180deg, rgba(5,24,35,1) 13%, rgba(5,24,35,0.6026785714285714) 37%, rgba(5,24,35,0) 82%); */
+
+
+        /* background-image: url(/img/hero/slogan-desktop.jpg); */
         height: 50px;
         width: 100%;
         background-position: center;
@@ -656,7 +670,8 @@ footer {
     }
 
     .slogan {
-        background-image: url(/img/hero/slogan-desktop.jpg);
+        background-image: url(/img/hero/2025-v1/slogan-desktop-2025v1.jpg);
+        /* background-image: url(/img/hero/slogan-desktop.jpg); */
         height: 70px;
         width: 100%;
     }
@@ -686,12 +701,12 @@ footer {
 
 .efluj_iframe iframe {
     width: 100%;
-    height: 1650px;    
+    height: 4950px;    
 }
 
 @media (min-width: 576px) {
     .efluj_iframe iframe {
-        height: 980px;
+        height: 2250px;
     }
     
 }
