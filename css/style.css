@@ -701,12 +701,12 @@ footer {
 
 .efluj_iframe iframe {
     width: 100%;
-    height: 2170px;    
+    height: 2130px; 
 }
 
 @media (min-width: 576px) {
     .efluj_iframe iframe {
-        height: 980px;
+        height: 1110px;
     }
     
 }
