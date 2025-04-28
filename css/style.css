@@ -9,12 +9,12 @@
     --color-black: #051823;
     --color-black--secondary: #051823;
 
-    --color--blue: #26648a;
-    --color--purple: #0E2F44;
+    --color--blue: #4c299d;
+    --color--purple: #4c299d;
     /* --color--blue: #2F84C1; */
     /* --color--purple: #96519B; */
     --color--pink: #B30101;
-    --color--yellow: #FFA500;
+    --color--yellow: #e69015;
 }
 /* Main Styles */
 /* ------------- */
@@ -89,6 +89,9 @@ section {
     background-color: var(--color--yellow);
 }
 
+.bg-purple {
+    background-color: var(--color--purple);
+}
 
 /*
 /* Nav Styles */
@@ -158,7 +161,7 @@ section {
 
 .hero {
     height: 60vh;
-    background-image: url('/img/hero/2025-v1/bg-hero-desktop-2025v1.jpg');
+    background-image: url('/img/hero/2025-agosto/bg-hero-desktop-v1-2025.jpg');
     background-position: start;
     background-size: cover;
 }
@@ -185,7 +188,7 @@ section {
 }
 
 .date {
-    background-image: url(/img/hero/2025-v1/banner-recorte-2025v1.jpg);
+    background-image: url(/img/hero/2025-agosto/banner-trama-1443x165px-100.jpg);
     /* background-image: url(/img/hero/bg-hero-2-mobile.jpg); */
     background-position: 30%;
     background-size: cover;
@@ -628,7 +631,7 @@ footer {
     }
 
     .slogan {
-        background-image: url(/img/hero/2025-v1/slogan-desktop-2025v1.jpg) linear-gradient(180deg, rgba(5,24,35,1) 13%, rgba(5,24,35,0.6026785714285714) 37%, rgba(5,24,35,0) 82%);;
+        background-image: url(/img/hero/2025-agosto/slogan-desktop-2891x87px-100.jpg) linear-gradient(180deg, rgba(5,24,35,1) 13%, rgba(5,24,35,0.6026785714285714) 37%, rgba(5,24,35,0) 82%);;
 
         /* background-image: linear-gradient(180deg, rgba(5,24,35,1) 13%, rgba(5,24,35,0.6026785714285714) 37%, rgba(5,24,35,0) 82%); */
 
@@ -670,7 +673,7 @@ footer {
     }
 
     .slogan {
-        background-image: url(/img/hero/2025-v1/slogan-desktop-2025v1.jpg);
+        background-image: url(/img/hero/2025-agosto/slogan-desktop-2891x87px-100.jpg);
         /* background-image: url(/img/hero/slogan-desktop.jpg); */
         height: 70px;
         width: 100%;
@@ -701,12 +704,12 @@ footer {
 
 .efluj_iframe iframe {
     width: 100%;
-    height: 2130px; 
+    height: 2360px; 
 }
 
 @media (min-width: 576px) {
     .efluj_iframe iframe {
-        height: 1110px;
+        height: 1250px;
     }
     
 }
