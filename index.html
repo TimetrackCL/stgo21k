@@ -280,7 +280,7 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/circuits/2025-agosto/CIRCUITO_21K-stgo21k-100.jpg" alt="Circuito 21K" style="max-width: 100%; height: auto;">
+                                    <img src="img/circuits/2025-agosto/CIRCUITO_21K-stgo21k-100.jpg" alt="Circuito 21K" width="800" height="600" style="max-width: 100%; height: auto; object-fit: contain;">
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
@@ -306,7 +306,7 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/circuits/2025-agosto/CIRCUITO_10K-stgo21k-100.jpg" alt="Circuito 10K" style="max-width: 100%; height: auto;">
+                                    <img src="img/circuits/2025-agosto/CIRCUITO_10K-stgo21k-100.jpg" alt="Circuito 10K" width="800" height="600" style="max-width: 100%; height: auto; object-fit: contain;">
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
@@ -333,7 +333,7 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/circuits/2025-agosto/CIRCUITO_5K-stgo21k-100.jpg" alt="Circuito 5K" style="max-width: 100%; height: auto;">
+                                    <img src="img/circuits/2025-agosto/CIRCUITO_5K-stgo21k-100.jpg" alt="Circuito 5K" width="800" height="600" style="max-width: 100%; height: auto; object-fit: contain;">
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
@@ -547,6 +547,23 @@
         document.addEventListener('show.bs.modal', function (event) {
             // Guardar posición del scroll ANTES de que el modal se muestre
             scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Asegurar que las imágenes del modal tengan dimensiones estables
+            const modal = event.target;
+            const modalImg = modal.querySelector('.modal-body img');
+            
+            if (modalImg && !modalImg.complete) {
+                // Si la imagen no está cargada, establecer dimensiones mínimas
+                modalImg.style.minWidth = '600px';
+                modalImg.style.minHeight = '400px';
+                modalImg.style.objectFit = 'contain';
+                
+                // Cuando la imagen se carga, ajustar el modal
+                modalImg.onload = function() {
+                    this.style.minWidth = '';
+                    this.style.minHeight = '';
+                };
+            }
         });
         
         document.addEventListener('shown.bs.modal', function (event) {
@@ -589,6 +606,29 @@
                     }
                 }
             }
+        });
+
+        // Precargar imágenes de los circuitos para evitar problemas de expansión
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageUrls = [
+                'img/circuits/2025-agosto/CIRCUITO_21K-stgo21k-100.jpg',
+                'img/circuits/2025-agosto/CIRCUITO_10K-stgo21k-100.jpg',
+                'img/circuits/2025-agosto/CIRCUITO_5K-stgo21k-100.jpg'
+            ];
+            
+            imageUrls.forEach(function(url) {
+                const img = new Image();
+                img.src = url;
+                // Precargar silenciosamente
+                img.style.display = 'none';
+                document.body.appendChild(img);
+                img.onload = function() {
+                    // Remover de DOM una vez cargada
+                    if (this.parentNode) {
+                        this.parentNode.removeChild(this);
+                    }
+                };
+            });
         });
 
     </script>

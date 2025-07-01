@@ -1,0 +1,118 @@
+/* Correcciones para modales */
+/* ======================== */
+
+/* Asegurar que el modal se muestre correctamente por encima de otros elementos */
+.modal {
+    z-index: 1055;
+}
+
+/* Evitar transiciones que causan el efecto de expansión inicial */
+.modal.fade .modal-dialog {
+    transition: none !important;
+    transform: none !important;
+}
+
+.modal.fade {
+    transition: opacity 0.15s linear !important;
+}
+
+.modal-backdrop {
+    z-index: 1050;
+}
+
+/* Evitar problemas de scroll en dispositivos móviles */
+.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
+}
+
+/* Mejorar la experiencia en dispositivos móviles */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .modal-body img {
+        width: 100%;
+        height: auto;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+}
+
+/* Asegurar que las animaciones no interfieran con el modal */
+.modal.show {
+    animation: none !important;
+}
+
+.modal-dialog {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+}
+
+/* Evitar el comportamiento de expansión inicial */
+.modal-dialog.modal-lg {
+    max-width: 800px;
+    width: 90%;
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0.5rem;
+    min-height: 200px;
+}
+
+/* Dimensiones estables para las imágenes del modal */
+.modal-body {
+    padding: 1rem;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Evitar conflictos con AOS cuando el modal está abierto */
+.modal-open .aos-animate {
+    animation-play-state: paused;
+}
+
+/* Mejorar la apariencia del botón de cierre */
+.btn-close {
+    opacity: 1;
+    background: none;
+    border: none;
+    color: var(--color-white) !important;
+    font-size: 1.5rem;
+    filter: none;
+}
+
+.btn-close:hover {
+    color: var(--color--yellow) !important;
+    opacity: 1;
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Asegurar que el modal-backdrop no interfiera con los clicks */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Evitar que el contenido detrás del modal se vea afectado por el scroll */
+body.modal-open {
+    overflow: hidden !important;
+    padding-right: 0 !important;
+} 
