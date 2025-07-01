@@ -427,13 +427,7 @@ box-shadow: 10px 10px 5px 0px rgba(29,29,27,0.37);
     border-color: var(--color-white);
 }
 
-.btn-x {
-    color: var(--color-white)!important;
-}
-
-.btn-x:hover {
-    color: var(--color--yellow);
-}
+/* Clase .btn-x removida - ya no se usa */
 
 .btn-close {
     color: var(--color-white)!important;
