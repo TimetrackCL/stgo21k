@@ -729,3 +729,20 @@ footer {
 .timetrack-footer a:hover {
     color: rgb(248, 102, 36);
 }
+
+/* Sponsor Logo Styles */
+/* ------------------- */
+.img-sporthub {
+    width: 140px !important;
+    height: 70px !important;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Responsive adjustments for sponsor logos */
+@media (max-width: 767px) {
+    .img-sporthub {
+        width: 120px !important;
+        height: 60px !important;
+    }
+}
